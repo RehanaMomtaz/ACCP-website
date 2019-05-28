@@ -1,14 +1,31 @@
-
-
-
 <!DOCTYPE html>
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> ACCP Membership </title>
+		<title> Membership WEBSITE </title>
 		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+			
+		<style>
+			table {
+					border-collapse: collapse;
+					border-spacing: 0;
+					width: 100%;
+					border: 1px solid #ddd;
+				}
+
+			th, td {
+					text-align:center;
+					padding: 8px;
+				}
+
+				
+				tr:nth-child(odd){background-color: #f2f2f2}
+			@media only screen and (max-width: 740px) {
+						td:nth-of-type(3){display:none}
+						th:nth-of-type(3){display:none}}
+		</style>
 
 	</head>
 	
@@ -19,28 +36,29 @@
 				<div class="row">
 					<div class ="clearfix">	
 						
-						<div class="row">
-					
-							<div class = "attribution"> </div>
-						</div>
+							<div class="heading">
+								<h2 style="padding-top:30px;"> Australian Council for Clinical Physiology</h2>
+								</div>
+							<div class = "row"> 
+							</div>
+						
 					</div>
 				</div>
 		
 			</div>
 		</header>
 		
-		<section style="position: sticky; top: 0px;">
+		<section>
 			<div class="row">
 			<div class ="clearfix">	
 				<div class="row">
 				<div class="navigagtion-2-of-2">
-					<a href = "./Home.html">Home </a>&nbsp;&nbsp;
-					<a href = "./Membership.html">ACCP Membership </a>&nbsp;&nbsp;
-					<a href = "./Index.html">Standards </a>&nbsp;&nbsp;
-					
-					<a href = "#contact">Contact Us</a>
-						<div class="topnav-right">
-					<a href="#search">Login</a>
+					<a href = "./index.html">Home</a>
+					<a href = "./Membership.html">ACCP Membership</a>
+					<a href = "./Standards.html">Standards</a>
+					<a href = "./Contact_Us.html">Contact Us</a>
+					<div class="topnav-right">
+						<a href="#search">Login</a>
 					
 					</div>
 				</div>
@@ -61,7 +79,7 @@
 					<div class ="span-1-of-1">
 					
 						
-						<div class="row" style="padding-left:25px";>
+						<div class="row" style="padding-left:25px">
 						<ul>
 							<li>Provide a register of the members</li>
 								<li>Ensure its members meet and uphold expected standards of practice and ongoing CPD within their professional group’s scope of practice</li>
@@ -72,52 +90,55 @@
 				
 			</div>
 			</div>
+			</div>
 		</section>
 	
 		
 		<section id ="images">
 			
 			<div class="row">
-				<h2>Membership</h2> <br/>
-					 <table>
-	  <tr>
-		<th>Category</th>
-		<th> &nbsp;&nbsp;</th> 
-		<th>Fee </th>
-	  </tr>
-	  <tr>
-		<td>Ordinary</td>
-		<th> &nbsp;&nbsp;</th> 
-		<td>$150+GST
-	  </tr>
-	  <tr>
-		<td>Associate</td>
-		<th> &nbsp;&nbsp;</th> 
-		<td>$120+GST</td>
-	  </tr>
-	  <tr>
-		<td>Retired</td>
-		<th> &nbsp;&nbsp;</th> 
-		<td>No Fees</td>
-	  </tr>
-	   <tr>
-		<td>Corporate</td>
-		<th> &nbsp;&nbsp;</th> 
-		<td>$300+GST</td>
-	  </tr>
-	  <tr>
-		<td>New Member</td>
-		<th>&nbsp;&nbsp; </th> 
-		<td>$45+GST</td>
-	  </tr>
-	<br/>
-	</table> <br/>
-			</div>
-			<div class="row">
-			
+				<h2>Registration Information</h2> <br/>
+	
+					<div style="overflow-x:auto;">
+						
+						<table>
+						
+								<tr>
+								<th>Catagory</th>
+								<th>Fee</th>
+								<th bgcolor="#aed6f1">Membership Code</th>
+								</tr>
+							
+							
+								<tr>
+									<td>Ordinary</td>
+									<td>$150+GST</td>
+									<td style="rowspan:3; bgcolor:#85c1e9;">Premium</td>
+								</tr>
+								<tr>
+									<td>Associate</td>
+									<td>$10+GST</td>
+									
+								</tr>
+								<tr>
+									<td>Retired</td>
+									<td>$150+GST</td>
+								</tr>
+								<tr>
+									<td>Corporate</td>
+									<td>$10+GST</td>
+									<td rowspan="3" bgcolor="##5dade2">Gold</td>
+								</tr>
+								<tr>
+									<td>New Member</td>
+									<td>$10+GST</td>
+								</tr>
+				
+							</table>
+					</div>		
 			</div>		
 		</section>
-		
+
 		<section style="border-top:1px solid gray"> 
 			<div class="row">
 				<p style="font-size:8pt; padding-left:20px"> All Materials are under copyright of ACCP </p> <br/>
