@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> Membership WEBSITE </title>
 		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-			
+		<!-- The following embedded styling is used to define the properties of the table-->	
 		<style>
 			table {
 					border-collapse: collapse;
@@ -21,6 +21,7 @@
 				}
 
 			tr:nth-child(odd){background-color: #f2f2f2}
+			<!-- following @media is used for different media types when the browser window is 740px-->
 			@media only screen and (max-width: 740px) {
 						td:nth-of-type(3){display:none}
 						th:nth-of-type(3){display:none}}
@@ -29,6 +30,7 @@
 	</head>
 	
 	<body>
+		<!-- The followinig section is header section of the page, styling defines through external CSS, used id and class selectors though external CSS, Nested div used-->
 		<header>
 			<div id="overlay">
 				<div class="row">
@@ -42,6 +44,7 @@
 			</div>
 		</header>
 		
+		<!-- The following section is for Navigation bar, styling defines through external CSS, used id and class selectors though external CSS, Nested div used-->
 		<section>
 			<div class="row">
 				<div class ="clearfix">	
@@ -60,14 +63,14 @@
 			</div>
 		</section>
 
-		
+		<!-- The following section has a list describing Membership Information, Styling defines through external CSS, used id and class selectors though external CSS, inline styling also used here, Nested div used-->
 		<section style="background-color:#F8F8F8; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;">
 			<div class ="clearfix">	
 				<div class ="row">
 					<div class ="row">
-						<h2 style="padding-top:0px">Membership Info</h2>
+						<h2 style="padding-top:0px">Membership Information</h2>
 						<div class ="span-1-of-1">
-							<div class="row" style="padding-left:25px;">
+							<div class="row" style="padding-left:25px;"> <!--inline styling used here-->
 								<ul>
 									<li>Provide a register of the members</li>
 									<li>Ensure its members meet and uphold expected standards of practice and ongoing CPD within their professional group’s scope of practice</li>
@@ -81,7 +84,7 @@
 			</div>
 		</section>
 	
-		
+		<!--The follwoing section add the table membership registration information, rowspan is used to merge the row -->
 		<section>
 			<div class="row">
 				<h2>Registration Information</h2> <br/>
@@ -122,10 +125,10 @@
 					</div>		
 			</div>		
 		</section>
-
-		<section style="border-top:1px solid gray;"> 
+		<!-- The following section is the footer section of this page, it's used styling through external CSS, has one inline styling-->
+		<section id="copyright"> 
 			<div class="row">
-				<p style="font-size:8pt; padding-left:20px"> All Materials are under copyright of ACCP </p> <br/>
+				<p style="font-size:8pt; padding-left:20px"> All Materials are under copyright of ACCP </p> <br/> <!--Inline styling used here that overrides styles in the external sheet's paragrapgh -->
 			</div>
 			<div class="row" >
 				<div class="row">

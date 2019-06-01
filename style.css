@@ -5,10 +5,14 @@
     padding: 0;
     margin: 0;
 }
+
+/* Custom font inclussion*/
 @font-face {
    font-family: myFirstFont;
    src:url("../font/Poppins-Regular.woff2");
 }
+
+/* Body and html overall property*/
 html, body{
     background-color: #FFF;
     color: #555;
@@ -17,60 +21,62 @@ html, body{
 	font-size:16px;
 /*    text-rendering: optimizeLegibility; */
     overflow-x: hidden;
-
 }
 
+/* Header properties are defined by the following element*/
 header{
 	height: 19.5vh;
 	background-image: url("../images/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	opacity: 1;
-	
-	
 }
 
+/* The following ID is the part of header element */
 #overlay{
-	
 	height:100%;
 	width: 100%;
 	background-color:rgba(0, 0, 0, 0.6);
-	
 }
 
 
+/* The following calss defines the Header text div size and alignment*/
 .heading {
 	width:80%;
 	float: left;
-	
 }
 
+/* This element define the heading text properties at h2 level*/
 h2{
 	padding-bottom:10px;
 	font-size:28pt; 
 	color:lightgrey;
 }
 
+/* This element define the heading text properties at h3 level*/
+h3{
+	padding-bottom:10px;
+}
+
+/* Media quearies at 740px*/
 @media only screen and (max-width: 740px){h2
 
 {
 	padding-bottom:10px;
 	font-size:18pt; 
-	color:lightgrey;
+	color:lightgrey;}
 }
 
-}
-
+/* Media quearies at 600px*/
 @media only screen and (max-width: 600px){h2
 
 {
 	padding-bottom:10px;
 	font-size:14pt; 
-	color:lightgrey;
+	color:lightgrey;}
 }
 
-}
-
+/* The following ID defines the navingation division properies*/
 #navigagtion-2-of-2{
 	width:96.8%;
 	float: left;
@@ -79,6 +85,8 @@ h2{
 	border-width: 1px;
 	border-radius: 5px;
 }
+
+/* The following ID with link element(a) defines the navingation division and link properies*/
 #navigagtion-2-of-2 a{
 	width:auto;
 	float: left;
@@ -88,12 +96,13 @@ h2{
 	border-radius: 5px;
 }
 
-
+/* This class define the properties of Login Button in the navigation*/
 .topnav-right{
 	padding-right: 20px;
 	float: right;
 }
 
+/* Media quearies at 740px responsive design*/
 @media only screen and (max-width: 740px){
 #navigagtion-2-of-2 a{
 	width:100%;
@@ -106,27 +115,14 @@ h2{
 }
 }
 
-
+/* Media quearies at 740px responsive design*/
 @media only screen and (max-width: 740px){
 .topnav-right{
-	
 	float: none;
 }
 }
 
-
-.navigagtion-1-of-2{
-	max-width: 1140px;
-	background-color:rgba(0, 0, 0, 0.3);	
-	padding-top:20px;
-	padding-left:52px;
-	padding-bottom:18px;
-	position: static;
-	width:45%;
-	float:left;
-}
-
-
+/* Psoudo selector for all link*/
 a:link {
   color: green;
   text-decoration: none;
@@ -145,11 +141,9 @@ a:link {
 #navigagtion-2-of-2 a:active{
   color:blue;
   text-decoration: none;}
+/*--------------------------------------------------*/
 
-.clearfix{
-    zoom: 1;
-}
-
+/*This tag clear any content at the end of the div*/
 .clearfix::after{
     content: "";
     clear: both;
@@ -158,19 +152,13 @@ a:link {
     visibility: hidden;
 }
 
+/* The following class defines the div properties as a row section */
 .row{
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.col{
-     display: block;
-     float: left;
-     margin: 1% 0 1% 1.6%;	
-
-}
-
-
+/* The following classes which are within line 161 and 233 to define the column properties with different width*/
 .span-1-of-4{
 	width:23.4%;
 	float: left;
@@ -242,58 +230,32 @@ a:link {
 }
 
 }
+/*-------------------------------------------------------------------*/
+
+/*Section element property*/
 section{
     padding: 10px 0;
 }
 
+/*Section element property*/
 p{
 	padding-left:2px;
-	
 }
 
-h3{
-	padding-bottom:10px;
-}
-
+/*the following img tag define the Images*/
 img{
 	
 	opacity: 0.3;
 	transition: 0.5s;
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-input{
-	width:75%;
-}
-
-textarea{
-	
-	width:75%
-}
-
-@media only screen and (max-width: 740px){
-	
-	input{
-	width:98%;
-}
-
-	textarea{
-	
-	width:98%
-}
-	
-	
-}
-
+/* The unordered list of image*/
 #images ul{
 	list-style: none;
 	width: 100%;
 }
 
+/*The following tag define the width of image on the screen*/
 #images ul li figure{
 	width: 23.4%;
 	overflow: hidden;
@@ -303,23 +265,43 @@ textarea{
 @media only screen and (max-width: 740px) {
 #images ul li figure{
 	width: 46.8%;
-	overflow: hidden;
-	
+	overflow: hidden;}
 }
 
-}
+/*----------------------------------------------------------*/
+
+/* The following properties display the portion of the Image*/
 #images ul li figure img{
 	width: 100%;
 	height: auto;
 	opacity: 0.6;
 	transform: scale(1.5);	
-	transition:transform 0.75s;
-	
+	transition:transform 0.5s;
 }
+
 #images ul li figure img:hover{
 	opacity: 1;
 	transform: scale(1.15);
 }
+/*-----------------------------------------------------------*/
 
+/*Form input element properties*/
+input{
+	width:75%;
+}
 
+/*Form text input element properties*/
+textarea{
+	
+	width:75%
+}
 
+/*Resposive design at the screen lower than 740px*/
+@media only screen and (max-width: 740px){
+	
+	input{width:98%;}
+	textarea{width:98%}
+	}
+
+#copyright{
+	border-top:1px solid gray;}

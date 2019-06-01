@@ -6,10 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> Standards WEBSITE </title>
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
-		<!-- <link rel="stylesheet" type="text/css"  media="print" href="./css/style.css" /> -->
+		<!-- The following embedded styling is used for media print puepose-->
 		<style>
 		    #copyright{
-				border-top:1px solid gray;}
+				border-top:4px solid gray;} <!-- This embedded styling override the external CSS-->
 
 		    @media only print{
 				#navigagtion-2-of-2{display:none;}
@@ -22,6 +22,7 @@
 	</head>
 	
 	<body>
+	<!-- The followinig section is header section of the page, styling defines through external CSS, used id and class selectors though external CSS, Nested div used-->
 		<header>
 			
 			<div id="overlay">
@@ -37,6 +38,7 @@
 		</header>
 		
 		<section>
+		<!-- The following section is for Navigation bar, styling defines through external CSS, used id and class selectors though external CSS, Nested div used-->
 			<div class="row">
 				<div class ="clearfix">	
 					<div class="row">
@@ -53,7 +55,7 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- The following section has a list describing standards of conduct, Styling defines through external CSS, used id and class selectors though external CSS, inline styling also used here, Nested div used-->
 		<section  style="background-color:#F8F8F8; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;">
 			<div class ="clearfix">	
 				<div class ="row">	
@@ -73,7 +75,7 @@
 				</div>
 			</div>
 		</section>
-	
+		<!-- The following section has a list describing Standards of Ethics, Styling defines through external CSS, inline styling also used here, Nested div used-->
 		<section style="background-color:#F8F8F8; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;">
 			<div class ="clearfix">	
 				<div class ="row">
@@ -93,7 +95,7 @@
 				</div>
 			</div>
 		</section>		
-
+		<!-- The following section has a list describing Standards of performance, Styling defines through external CSS, inline styling also used here, Nested div used-->
 		<section style="background-color:#F8F8F8; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)!important;">
 			<div class ="clearfix">	
 				<div class ="row">
@@ -118,10 +120,10 @@
 				</div>
 			</div>
 		</section>			
-
+		<!-- The following section is the footer section of this page, it's used styling through external CSS, has one inline styling-->
 		<section id="copyright"> 
 			<div class="row">
-				<p style="font-size:8pt; padding-left:20px;"> All Materials are under copyright of ACCP </p> <br/>
+				<p style="font-size:8pt; padding-left:20px;"> All Materials are under copyright of ACCP </p> <br/> <!--Inline styling used here that overrides styles in the external sheet's paragrapgh -->
 			</div>
 			<div class="row" >
 				<div class="row">
